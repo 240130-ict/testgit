@@ -13,9 +13,9 @@ public class test3 {
 
         for(int i = 0; i < res1.length; i++){
 
-            if(i<=s-1 ){
+            if(i<=s-1 || i==res1.length-1){
                 answer = answer + res1[i];
-            } else if (i<=res2.length-1) {
+            } else if (s-1 < i && i<res1.length-1) {
                 answer = answer + res2[i];
             }
         }
