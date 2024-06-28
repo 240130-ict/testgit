@@ -94,4 +94,22 @@ public class Day4Problems {
         return answer;
     }
 
+    public static int solution(int a, int b, boolean flag) {
+        Day4Problems sol= new Day4Problems();
+        int answer = sol.solution2(a,b,flag);
+
+        return answer;
+    }
+    public static int solution2(int a, int b, boolean flag) {
+        int answer = 0;
+        if(flag){
+            answer = a+b;
+        }else{
+            answer = a-b;
+        }
+        return answer;
+
+    }
+
 }
+

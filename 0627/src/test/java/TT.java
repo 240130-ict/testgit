@@ -2,6 +2,7 @@ import day4.Day4Problems;
 import org.example.Solution1;
 import org.example.Solution2;
 import org.junit.jupiter.api.Test;
+import org.example.switchT.SwichTest;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -25,6 +26,16 @@ public class TT {
         assertThat(r, is(1));
 
     }
+    @Test
+    // 1~12까지의 랜덤한 수가 잘 나오나?
+    public void randomTest() {
+        SwichTest switchTest = new SwichTest();
+        for(int i = 1; i <= 1000; i++){
+            int randomNum = switchTest.getRandomNumber(1, 12);
+            assertThat(true, is(randomNum >= 1 && randomNum <= 12));
+        }
+    }
+
 
 
 }
